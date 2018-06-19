@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import { Calender } from './component/Calender';
+import { DayChecker } from './component/DayChecker';
+import { WorkSched } from './component/WorkSched';
 
 
-let header = {
-    backgroundColor: '#222'
-}
-let defaultTextColor = '#fff';
 
 
 class App extends Component {
+        
   render() {
     return (
-        <div style={{...header, height: '200px'}}>
-      <div style={{color: defaultTextColor}}>Just the initial file</div>
+        <div>
+      {/*  <DayChecker /> */}
+        <WorkSched />
         </div>
     );
   }
